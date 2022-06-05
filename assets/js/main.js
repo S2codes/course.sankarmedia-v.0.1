@@ -1,8 +1,24 @@
 $(document).ready(function () {
     console.log('hello querry');
+    $('.videoCover').click(function () {
+        $('#whyVideo').trigger('play');
+        $(this).css('display', 'none');
+
+    })
+    $('#whyVideo').click(function () {
+        $(this).trigger('pause');
+        $('.videoCover').css('display', 'flex');
+    })
+    // faq 
+    $('.faqQuestion').click(function () {
+        let faq = $(this).attr('data-faq');
+        $('#faq'+faq).toggle('faq-show');
+    })
+
+
+
+
     $('#playlist').click(function () {
-        console.log('playlist');
-        console.log($('#playlistIcon').attr('class'));
         if ($('#playlistIcon').attr('class') == 'ms-3 fas fa-plus') {
             $('#playlistIcon').removeClass('fa-plus');
             $('#playlistIcon').addClass('fa-minus');
