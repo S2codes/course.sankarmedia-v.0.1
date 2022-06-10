@@ -622,7 +622,9 @@ video {
 
 
 
-
+.header-item img{
+ display: none;
+}
 
 
 
@@ -649,6 +651,32 @@ video {
 
 
 
+    .header-item{
+        border: 2px solid red;
+        position: relative;
+        height: auto;
+        background: none;
+        padding: 0.3rem;
+        flex-direction: column;
+    }
+    .header-item img{
+        display: block;
+        object-fit: cover;
+    }
+
+    .header-info{
+        /* border: 2px solid blue; */
+        /* position: absolute; */
+        /* bottom: -5%; */
+        /* left: 0; */
+        padding: 0.6rem;
+        /* background-color: #0cb36d; */
+
+
+
+    }
+
+
 
 
 
@@ -657,7 +685,7 @@ video {
         width: 100%;
     }
     .header-info h1{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     .subHeading{
         font-size: 2rem;
