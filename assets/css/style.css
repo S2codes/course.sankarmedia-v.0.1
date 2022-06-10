@@ -652,7 +652,7 @@ video {
 
 
     .header-item{
-        border: 2px solid red;
+/*         border: 2px solid red; */
         position: relative;
         height: auto;
         background: none;
